@@ -1,0 +1,23 @@
+.caixa {
+  width: 300px;
+  height: 300px;
+  background: black;
+
+  h1 {
+    color: green;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    color: yellow;
+  }
+
+  a {
+    color: red;
+
+    &:hover {
+      color: blue;
+    }
+  }
+}

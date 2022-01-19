@@ -1,0 +1,64 @@
+/*##### GLOBAL #####*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  font-family: sans-serif;
+}
+
+/*##### CONTAINER #####*/
+.container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+
+  .box{
+    padding: 20px;
+    width: 33%;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    
+    &.active{
+      background: red;
+    }
+
+    h2{
+      font: {
+        size: 30px;
+        weight: bold;
+      }
+
+      margin: {
+        top: 10px;
+        left: 20px;
+        right: 30px;
+        bottom: 22px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+
+      &.hidden{
+        display: none;
+      }
+    }
+
+    a{
+      color: green;
+
+      &:hover{
+       color: springgreen;
+
+       & + p.hidden{
+         display: block;
+       }
+      }
+    }
+  } /*box*/
+}/*container*/
