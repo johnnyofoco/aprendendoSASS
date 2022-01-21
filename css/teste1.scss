@@ -1,4 +1,12 @@
 /*##### GLOBAL #####*/
+$color-primary: black;
+$color-secondary: red;
+
+$font-primary: 'Arial', sans-serif;
+$font-secondary: 'Verdana', sans-serif;
+
+$margin-containers: 20px;
+
 *{
   margin: 0;
   padding: 0;
@@ -6,7 +14,7 @@
 }
 
 body{
-  background-color: black;
+  background-color: $color-primary;
   font-family: sans-serif;
 }
 
@@ -24,13 +32,16 @@ body{
     border-radius: 8px;
     
     &.active{
-      background: red;
+      background: $color-secondary;
     }
 
     h2{
+
+      font-family: $font-primary;
       font: {
         size: 30px;
         weight: bold;
+        
       }
 
       margin: {
@@ -43,6 +54,7 @@ body{
 
     p {
       font-size: 18px;
+      font-family: $font-secondary;
 
       &.hidden{
         display: none;
