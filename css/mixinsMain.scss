@@ -1,6 +1,7 @@
 @import 'variablesPartials';
 @import 'basePartials';
 @import 'mixins';
+@import 'extends';
 
 /*##### CONTAINER #####*/
 .container{
@@ -49,6 +50,11 @@
       @include reset-list(100px, 10px, square);
       /*or*/
       @include reset-list();
+    }
+
+    .success{
+      @extend %box-alert;
+      background-color: green;
     }
 
     a{

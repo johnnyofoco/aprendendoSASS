@@ -11,6 +11,17 @@ body {
   font-family: sans-serif;
 }
 
+.container .box .success {
+  color: white;
+  font-weight: normal;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
+}
+
 /*##### CONTAINER #####*/
 .container {
   display: -webkit-box;
@@ -61,6 +72,10 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.container .box .success {
+  background-color: green;
 }
 
 .container .box a {
