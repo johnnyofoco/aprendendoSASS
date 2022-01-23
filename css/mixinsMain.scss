@@ -54,7 +54,17 @@
 
     .success{
       @extend %box-alert;
-      background-color: green;
+      @include bg-effect(success);
+    }
+
+    .danger{
+      @extend %box-alert;
+      @include bg-effect(danger);
+    }
+
+    .warning{
+      @extend %box-alert;
+      @include bg-effect();
     }
 
     a{

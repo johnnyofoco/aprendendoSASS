@@ -11,7 +11,7 @@ body {
   font-family: sans-serif;
 }
 
-.container .box .success {
+.container .box .success, .container .box .danger, .container .box .warning {
   color: white;
   font-weight: normal;
   display: block;
@@ -76,6 +76,15 @@ body {
 
 .container .box .success {
   background-color: green;
+}
+
+.container .box .danger {
+  background-color: red;
+}
+
+.container .box .warning {
+  background-color: white;
+  color: black;
 }
 
 .container .box a {
