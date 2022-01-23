@@ -1,12 +1,6 @@
 @import 'variablesPartials';
 @import 'basePartials';
-
-
-@mixin reset-list($margin, $padding, $style) {
-    margin: $margin;
-    padding: $padding;
-    list-style: $style;
-}
+@import 'mixins';
 
 /*##### CONTAINER #####*/
 .container{
@@ -53,6 +47,8 @@
 
     ul{
       @include reset-list(100px, 10px, square);
+      /*or*/
+      @include reset-list();
     }
 
     a{

@@ -1,4 +1,3 @@
-/*##### VARIABLES #####*/
 /*##### GLOBAL #####*/
 * {
   margin: 0;
@@ -58,6 +57,10 @@ body {
   margin: 100px;
   padding: 10px;
   list-style: square;
+  /*or*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .container .box a {
